@@ -8,5 +8,7 @@ basic.forever(function () {
         } else {
             basic.showIcon(IconNames.Yes)
         }
+    } else {
+        basic.clearScreen()
     }
 })
