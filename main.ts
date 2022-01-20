@@ -3,10 +3,10 @@ huskylens.initMode(protocolAlgorithm.ALGORITHM_FACE_RECOGNITION)
 basic.forever(function () {
     huskylens.request()
     if (huskylens.isAppear_s(HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
-        if (huskylens.isLearned(huskylens.readArrow_s(Content4.ID))) {
-            basic.showString("Hello!")
+        if (huskylens.readBox_s(Content3.ID) == 0) {
+            basic.showIcon(IconNames.No)
         } else {
-            basic.showString("Get out")
+            basic.showIcon(IconNames.Yes)
         }
     }
 })
