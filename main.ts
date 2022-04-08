@@ -13,6 +13,5 @@ basic.forever(function () {
         }
     } else {
         basic.clearScreen()
-        radio.sendValue("none", 0)
     }
 })
